@@ -9,9 +9,9 @@ public class testeExemplo1 {
         System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://github.com//");
+        WebElement marketPlaceButton = driver.findElement(By.xpath("//a[text()='Marketplace']"));
 
         //Act
-        WebElement marketPlaceButton = driver.findElement(By.xpath("//a[text()='Marketplace']"));
         marketPlaceButton.click();
 
         //Assert
